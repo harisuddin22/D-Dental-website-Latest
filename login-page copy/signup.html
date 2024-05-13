@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="signup">
+       <img src="assets/img/login-bg.jpg" alt="signup image" class="signup__img">
+    
+       <form action="" class="signup__form">
+          <h1 class="signup__title">Sign Up</h1>
+    
+          <div class="signup__content">
+             <div class="signup__box">
+                <i class="ri-user-3-line signup__icon"></i>
+    
+                <div class="signup__box-input">
+                   <input type="text" required class="signup__input" id="signup-username" placeholder=" ">
+                   <label for="signup-username" class="signup__label">Username</label>
+                </div>
+             </div>
+    
+             <div class="signup__box">
+                <i class="ri-mail-line signup__icon"></i>
+    
+                <div class="signup__box-input">
+                   <input type="email" required class="signup__input" id="signup-email" placeholder=" ">
+                   <label for="signup-email" class="signup__label">Email</label>
+                </div>
+             </div>
+    
+             <div class="signup__box">
+                <i class="ri-lock-2-line signup__icon"></i>
+    
+                <div class="signup__box-input">
+                   <input type="password" required class="signup__input" id="signup-pass" placeholder=" ">
+                   <label for="signup-pass" class="signup__label">Password</label>
+                   <i class="ri-eye-off-line signup__eye" id="signup-eye"></i>
+                </div>
+             </div>
+          </div>
+    
+          <button type="submit" class="signup__button">Sign Up</button>
+    
+          <p class="signup__login">
+             Already have an account? <a href="../login-page/login.html">Login</a>
+          </p>
+       </form>
+    </div>
+    
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

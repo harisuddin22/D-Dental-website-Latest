@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D-Dental</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-size: 2rem; margin-left: 3rem;">D-Dental <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M186.1 52.1C169.3 39.1 148.7 32 127.5 32C74.7 32 32 74.7 32 127.5v6.2c0 15.8 3.7 31.3 10.7 45.5l23.5 47.1c4.5 8.9 7.6 18.4 9.4 28.2l36.7 205.8c2 11.2 11.6 19.4 22.9 19.8s21.4-7.4 24-18.4l28.9-121.3C192.2 323.7 207 312 224 312s31.8 11.7 35.8 28.3l28.9 121.3c2.6 11.1 12.7 18.8 24 18.4s20.9-8.6 22.9-19.8l36.7-205.8c1.8-9.8 4.9-19.3 9.4-28.2l23.5-47.1c7.1-14.1 10.7-29.7 10.7-45.5v-2.1c0-55-44.6-99.6-99.6-99.6c-24.1 0-47.4 8.8-65.6 24.6l-3.2 2.8 19.5 15.2c7 5.4 8.2 15.5 2.8 22.5s-15.5 8.2-22.5 2.8l-24.4-19-37-28.8z"/></svg></a>
+        <div id="left-section">
+        <a href="nav"><button class="button-48" role="button"><span class="text">Home</span></button></a>
+        <a href="#about"><button class="button-48" role="button"><span class="text">About</span></button></a>
+        <a href="#contact"><button class="button-48" role="button"><span class="text">Book Now</span></button></a>
+        <a href="#contacts"><button class="button-48" role="button"><span class="text">Call Now</span></button></a>
+      </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              D-Dental
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-black"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Register/Login
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light">
+                  <li><a class="dropdown-item" href="login-page/login.html">Login <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></a></li>
+                  <li><a class="dropdown-item" href="login-page copy/signup.html">Sign Up <svg xmlns="http://www.w3.org/2000/svg" height="10" width="15" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero-section">
+    <img id="center-img" src="assets/BG-1.jpg" alt="">
+    <div id="title-and-slogan">
+    <h1 id="title" class="animate__animated animate__fadeInDown ">D-Dental</h1>
+    <h3 id="slogan" class="animate__animated animate__fadeInDown">A Better Life Through Better Dentistery</h3>
+    <div id="buttons-container">
+    <button class="button-48 hero-buttons animate__animated animate__fadeInDown" role="button"><span class="text">REQUEST APPOINTMENT</span></button>
+    <button class="button-48 hero-buttons animate__animated animate__fadeInDown" role="button"><span class="text">Call 92+ 321 9876543</span></button>
+    </div>
+    </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>Welcome to D-Dental ! We are dedicated to providing exceptional dental care tailored to meet the unique needs of each patient. Our team of experienced professionals is committed to ensuring your comfort and satisfaction during every visit.</p>
+          <p>At [Your Dental Practice Name], we understand the importance of oral health in maintaining overall well-being. With our state-of-the-art facility and advanced techniques, we offer a comprehensive range of dental services to address all your oral health needs.</p>
+          <p>Our mission is to provide personalized care in a comfortable environment, empowering our patients to achieve optimal oral health and a beautiful smile.</p>
+        </div>
+        <div class="about-image">
+          <img src="assets/13721 (1).jpg" alt="About Image">
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="container">
+        <div class="services">
+          <div class="service-item">
+            <img src="assets/cards-img/2147879125.jpg" alt="Service 1">
+            <h3>Preventive Dentistry</h3>
+            <p>Regular cleanings, exams, and fluoride treatments to prevent dental issues.</p>
+          </div>
+          <div class="service-item">
+            <img src="assets/cards-img/2147879188.jpg" alt="Service 2">
+            <h3>Restorative Dentistry</h3>
+            <p>Fillings, crowns, bridges, and implants to restore damaged or missing teeth.</p>
+          </div>
+          <div class="service-item">
+            <img src="assets/cards-img/2148338121.jpg" alt="Service 3">
+            <h3>Cosmetic Dentistry</h3>
+            <p>Teeth whitening, veneers, and smile makeovers to enhance your smile's appearance.</p>
+          </div>
+          <div class="service-item">
+            <img src="assets/cards-img/24392.jpg" alt="Service 4">
+            <h3>Orthodontics</h3>
+            <p>Invisalign® and traditional braces to correct misaligned teeth and bite issues.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to schedule an appointment? Reach out to us today!</p>
+        <button id="book-now-btn" class="book-now-btn">Book Now</button>
+      </div>
+    </section>
+    
+    <div id="book-now-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Now</h2>
+        <form id="book-now-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="contacts">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Contact Us</h2>
+          <p>Have questions or ready to schedule an appointment? Reach out to us today!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>D-Dental<br>[Street#17]<br>[Karachi, Sindh, 123456]<br>Pakistan</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <p>Main Office: 123456789101<br>Emergency Line: 12334567892</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>General Inquiries: example@gmail.com<br>Appointments: example134@gmail.com</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <h3>Connect With Us:</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
