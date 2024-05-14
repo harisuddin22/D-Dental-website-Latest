@@ -37,16 +37,56 @@ nav.scrolled {
     }
 }
 
-#hero-section{
-    height: 100vh;
-    width: 100vw;
+#hero-section {
+  background-color: #f8f9fa;
 }
 
-#center-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 1;
+#hero-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: safe;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#hero-text {
+  flex: 1;
+  padding-right: 50px;
+  margin: 10rem 0 0 7rem;
+}
+
+#hero-text h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+#center-img-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5rem 6rem 0 0 ;
+}
+
+#center-img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section{
+  background-color:#f9f9f9;
+  scroll-margin-top: 100px;
 }
 
 .button-48 {
@@ -116,7 +156,7 @@ nav.scrolled {
 
 #title-and-slogan{
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
@@ -133,44 +173,12 @@ nav.scrolled {
     text-align: center;
 }
 
-#buttons-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-
-.hero-buttons{
-    border: 1px solid #dedede;
-    margin:0 1rem;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-    border-radius: 0.2rem;
-    white-space: nowrap;
-}
-
-.hero-buttons:active{
-    transition: none;
-    opacity: 0.6;
-    background-color: #FFFFFF;
-}
-
-
-@media(max-width:500px){
-    #buttons-container{
-        flex-direction: column;
-    }
-
-    .hero-buttons{
-        width: 14rem;
-        margin: 0.3rem;
-    }
-}
-
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
@@ -220,8 +228,6 @@ nav.scrolled {
         margin: 0;
     }
   }
-
-  /* Existing styles remain */
 
 #services {
     background-color: #f9f9f9;
@@ -336,9 +342,7 @@ nav.scrolled {
   .social-media a:hover {
     color: #0056b3;
   }
-/* Existing styles remain */
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -361,12 +365,17 @@ nav.scrolled {
   }
   
   .book-now-btn{
-    background-color: #e1e1e1;
+    background-color: #000000;
     transition: 0.35s;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    color: white;
   }
 
   .book-now-btn:hover{
-    background-color: #ccc;
+    background-color: #4a4a4a;
+    color: white;
   }
 
   .book-now-btn:active{
@@ -405,7 +414,7 @@ nav.scrolled {
   }
   
   #book-now-form button[type="submit"] {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -414,5 +423,5 @@ nav.scrolled {
   }
   
   #book-now-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #4a4a4a;
   }
