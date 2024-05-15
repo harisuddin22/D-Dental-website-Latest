@@ -10,6 +10,7 @@ html{
 body{
     height: 100%;
     width: 100%;
+    background-color:#f9f9f9;
 }
 
 nav.scrolled {
@@ -37,56 +38,98 @@ nav.scrolled {
     }
 }
 
-#hero-section {
-  background-color: #f8f9fa;
-}
-
-#hero-content {
+.hero {
   display: flex;
-  justify-content: space-around;
-  align-items: safe;
-  max-width: 1600px;
-  margin: 0 auto;
+  height: 100vh;
 }
 
-#hero-text {
-  flex: 1;
-  padding-right: 50px;
-  margin: 10rem 0 0 7rem;
-}
-
-#hero-text h1 {
-  font-size: 3rem;
-  font-weight: 100;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#hero-text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-#center-img-container {
+.left,
+.center,
+.right {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
-  margin: 5rem 6rem 0 0 ;
+  justify-content: center;
+  align-items: center;
 }
 
-#center-img {
-  max-width: 100%;
+.left {
+  background-color: #f0f0f0;
+}
+
+.right {
+  background-color: #f8f8f8;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.center img {
+  min-height: 20rem;
+  width: 20rem;
   object-fit: cover;
-  height: 70%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+
+.content {
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.hero-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+      margin-top:5rem;
+      flex-direction: column;
+  }
+
+  .center{
+    display: none;
+  }
 }
 
 section{
-  background-color:#f9f9f9;
-  scroll-margin-top: 100px;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  scroll-margin-top: 170px;
+  background: linear-gradient(to right bottom,rgba(230, 230, 230, 0.768),rgba(233, 233, 233, 0.694));
 }
 
 .button-48 {
@@ -175,59 +218,63 @@ section{
 
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #333;
+}
+
+.about, .mission, .dentists {
+  margin-bottom: 40px;
+}
+
+.about h2, .mission h2, .dentists h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.about p, .mission p, .dentists p {
+  line-height: 1.6;
+  color: #666;
+  text-align: center;
+}
+
+.dentists h2{
+  text-align: center;
+}
+
+.dentist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dentist img {
+  height: 10rem;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}
+
+.dentist h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
   }
-  
-  .about-content {
-    flex: 1;
-  }
-  
-  .about-content h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .about-content p {
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .about-image {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 2rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      padding: 20px;
-    }
-  
-    .about-content, .about-image {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .about-content {
-      margin-bottom: 30px;
-    }
-    .about-image img{
-        margin: 0;
-    }
-  }
+}
 
 #services {
     background-color: #f9f9f9;
@@ -284,6 +331,7 @@ section{
   
   #contacts .container {
     text-align: center;
+    background-color: transparent;
   }
   
   #contacts h2 {
