@@ -27,6 +27,11 @@ nav.scrolled {
     flex: 1;
 }
 
+.navbar-brand{
+  font-size: 1.7rem; 
+  margin-left: 1rem;
+}
+
 .nav-buttons{
     background-color: transparent;
     border: none;
@@ -77,6 +82,14 @@ nav.scrolled {
   background-color: transparent;
 }
 
+@media(max-width:1400px){
+  .center img {
+    display: none;
+  }
+}
+@media(max-width:380px){
+  
+}
 
 .content {
   padding: 20px;
