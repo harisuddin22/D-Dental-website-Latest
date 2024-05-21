@@ -119,7 +119,8 @@ p {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #367d39;
+  color: rgb(255, 255, 255);
 }
 
 .hero-img {
@@ -272,10 +273,18 @@ header h1 {
 }
 
 .dentist img {
-  height: 10rem;
+  height: 13rem;
   object-fit: cover;
-  margin: 0 auto;
-  border-radius: 0.3rem;
+  margin: 0.4rem auto;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.25s;
+}
+
+.dentist img:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+
 }
 
 .dentist h3 {
